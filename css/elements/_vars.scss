@@ -1,0 +1,11 @@
+// COLOR
+$gray: #56535F;
+$white: #ffffff;
+$orange: #FF4C13;
+$green: #37A03A;
+// MEDIA
+@mixin media ($w) {
+    @media only screen and (max-width: #{$w + 'px'}) {
+            @content;
+    }
+}

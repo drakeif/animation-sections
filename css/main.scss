@@ -1,0 +1,33 @@
+@import 'elements/fonts';
+@import 'elements/vars';
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+*,*::before,*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+}
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.container {
+    max-width: 116.4rem;
+    width: 100%;
+    min-width: 32rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+@import 'elements/wrapper';
+@import 'elements/section';

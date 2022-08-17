@@ -1,0 +1,285 @@
+.section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 5rem;
+    @include media(1083) {
+        justify-content: center;
+    }
+    &__left {
+        background: url("../images/earth-white.svg");
+    }
+    &__right {
+        background: url("../images/earth-dark.svg");
+    }
+    &__left, &__right {
+        position: relative;
+        width: 100%;
+        max-width: 52.2rem;
+        height: 55.4rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 1.2rem;
+        @include media(600) {
+            max-width: 42.2rem;
+            height: 45.4rem;
+        }
+        @include media(500) {
+            max-width: 32rem;
+            height: 35rem;
+        }
+    }
+    &__light {
+        margin-top: 4rem;
+        display: flex;
+        column-gap: 2.4rem;
+        align-items: center;
+        justify-content: center;
+        @include media(600) {
+            margin-top: 2rem;
+            column-gap: 1.9rem;
+        }
+        @include media(500) {
+            margin-top: 1.5rem;
+            column-gap: 1.5rem;
+        }
+    }
+    &__before {
+        font-size: inherit;
+        font-size: 3.2rem;
+        font-weight: 500;
+        line-height: 4rem;
+        color: $gray;
+        @include media(600) {
+            font-size: 2.8rem;
+        }
+        @include media(500) {
+            font-size: 2.6rem;
+        }
+    }
+    &__msFirst {
+        display: inline-block;
+        padding: 1rem;
+        font-size: inherit;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 2.4rem;
+        color: $white;
+        background: $orange;
+        border-radius: 4rem;
+        @include media(600) {
+            padding: .5rem 1rem;
+            font-size: 1.5rem;
+            line-height: 1.6rem;
+        }
+        @include media(500) {
+            font-size: 1.4rem;
+        }
+
+    }
+    &__dark {
+        margin-top: 4rem;
+        display: flex;
+        column-gap: 2.4rem;
+        align-items: center;
+        justify-content: center;
+        @include media(600) {
+            margin-top: 2rem;
+            column-gap: 1.9rem;
+            line-height: 1.6rem;
+        }
+        @include media(500) {
+            margin-top: 1.5rem;
+            column-gap: 1.5rem;
+        }
+    }
+    &__after {
+        font-size: inherit;
+        font-size: 3.2rem;
+        font-weight: 500;
+        line-height: 4rem;
+        color: $white;
+        @include media(600) {
+            font-size: 2.8rem;
+        }
+        @include media(500) {
+            font-size: 2.6rem;
+        }
+    }
+    &__msSecond {
+        display: inline-block;
+        padding: 1rem;
+        font-size: inherit;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 2.4rem;
+        color: $white;
+        background: $green;
+        border-radius: 4rem;
+        @include media(600) {
+            padding: .5rem 1rem;
+            font-size: 1.5;
+            line-height: 1.6rem;
+        }
+        @include media(500) {
+            font-size: 1.4rem;
+        }
+    }
+    &__wayLight {
+        position: absolute;
+        bottom: 30%;
+        left: 20%;
+        @include media(500) {
+            width: 18rem;
+        }
+    }
+    &__wayDark {
+        position: absolute;
+        bottom: 30%;
+        left: 20%;
+        @include media(500) {
+            width: 18rem;
+        }
+    }
+    &__serverLight {
+        position: absolute;
+        bottom: -7%;
+        left: -14%;
+        @include media(500) {
+            left: -20%;
+            bottom: -15%;
+        }
+    }
+    &__userLight {
+        position: absolute;
+        top: -10%;
+        right: -15%;
+        @include media(500) {
+            top: -13%;
+            right: -21%;
+        }
+    }
+    &__serverDark {
+        position: absolute;
+        bottom: -7%;
+        left: -14%;
+        @include media(500) {
+            left: -20%;
+            bottom: -15%;
+        }
+    }
+    &__userDark {
+        position: absolute;
+        top: -10%;
+        right: -15%;
+        @include media(500) {
+            top: -13%;
+            right: -21%;
+        }
+    }
+    &__moveIconLight {
+        position: absolute;
+        left: -2%;
+        bottom: -5%;
+        animation: moveLight 5s infinite ease-in-out .5s;
+        @keyframes moveLight {
+            from {
+                left: -2%;
+                bottom: -3%;
+            }
+            to {
+                left: 78%;
+                bottom: 72%;
+            }
+        }
+    }
+    &__moveIconDark {
+        position: absolute;
+        left: -2%;
+        bottom: -5%;
+        animation: moveDark 3s infinite ease-in .5s;
+        @keyframes moveDark {
+            from {
+                left: -2%;
+                bottom: -5%;
+            }
+            to {
+                left: 81%;
+                bottom: 75%;
+            }
+        }
+    }
+    &__infoLight {
+        position: absolute;
+        bottom: 30%;
+        left: 46%;
+        display: flex;
+        flex-direction: column;
+        row-gap: .6rem;
+        @include media(600) {
+            bottom: 25%;
+        }
+        @include media(500) {
+            bottom: 21%;
+        }
+    }
+    &__SSL, &__HTTP {
+        background: $orange url("../icons/icon-close.svg") no-repeat 88% center;
+        color: $white;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.6;
+        width: 8rem;
+        padding: .4rem .8rem;
+        border-radius: 4rem;
+        @include media(500) {
+            font-size: 1rem;
+            padding: .3rem .5rem;
+        }
+        
+    }
+    &__SSL.green, &__HTTP.green, &__DNS, &__FILE, &__WAF {
+        background: $green url("../icons/icon-check.svg") no-repeat 95% center;
+        color: $white;
+        font-size: 1.2rem;
+        font-weight: 400;
+        width: 13.4rem;
+        padding: .4rem .8rem;
+        border-radius: 4rem;
+        @include media(500) {
+            width: 11.4rem;
+            font-size: 1rem;
+            padding: .3rem .5rem;
+        }
+        
+    }
+    &__infoDarkFirst {
+        position: absolute;
+        bottom: 21%;
+        left: 30%;
+        display: flex;
+        flex-direction: column;
+        row-gap: .6rem;
+        @include media(600) {
+            bottom: 14%;
+            left: 26%;
+        }
+    }
+    &__infoDarkSecond {
+        position: absolute;
+        bottom: 18%;
+        left: 58%;
+        display: flex;
+        flex-direction: column;
+        row-gap: .6rem;
+        @include media(600) {
+            bottom: 15%;
+        }
+        @include media(500) {
+            bottom: 7%;
+            left: 57%;
+        }
+    }
+}
