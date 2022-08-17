@@ -262,38 +262,68 @@ img {
             animation: moveLight 5s infinite ease-in-out .5s; }
 @-webkit-keyframes moveLight {
   from {
-    left: -2%;
-    bottom: -3%; }
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
   to {
-    left: 78%;
-    bottom: 72%; } }
+    -webkit-transform: translate3d(220px, -130px, 0);
+            transform: translate3d(220px, -130px, 0); } }
 @keyframes moveLight {
   from {
-    left: -2%;
-    bottom: -3%; }
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
   to {
-    left: 78%;
-    bottom: 72%; } }
+    -webkit-transform: translate3d(220px, -130px, 0);
+            transform: translate3d(220px, -130px, 0); } }
+    @media only screen and (max-width: 500px) {
+      @-webkit-keyframes moveLight {
+        from {
+          -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0); }
+        to {
+          -webkit-transform: translate3d(140px, -80px, 0);
+                  transform: translate3d(140px, -80px, 0); } }
+      @keyframes moveLight {
+        from {
+          -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0); }
+        to {
+          -webkit-transform: translate3d(140px, -80px, 0);
+                  transform: translate3d(140px, -80px, 0); } } }
   .section__moveIconDark {
     position: absolute;
     left: -2%;
     bottom: -5%;
-    -webkit-animation: moveDark 3s infinite ease-in .5s;
-            animation: moveDark 3s infinite ease-in .5s; }
+    -webkit-animation: moveDark 3s infinite ease-in-out .5s;
+            animation: moveDark 3s infinite ease-in-out .5s; }
 @-webkit-keyframes moveDark {
   from {
-    left: -2%;
-    bottom: -5%; }
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
   to {
-    left: 81%;
-    bottom: 75%; } }
+    -webkit-transform: translate3d(220px, -130px, 0);
+            transform: translate3d(220px, -130px, 0); } }
 @keyframes moveDark {
   from {
-    left: -2%;
-    bottom: -5%; }
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
   to {
-    left: 81%;
-    bottom: 75%; } }
+    -webkit-transform: translate3d(220px, -130px, 0);
+            transform: translate3d(220px, -130px, 0); } }
+    @media only screen and (max-width: 500px) {
+      @-webkit-keyframes moveDark {
+        from {
+          -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0); }
+        to {
+          -webkit-transform: translate3d(140px, -80px, 0);
+                  transform: translate3d(140px, -80px, 0); } }
+      @keyframes moveDark {
+        from {
+          -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0); }
+        to {
+          -webkit-transform: translate3d(140px, -80px, 0);
+                  transform: translate3d(140px, -80px, 0); } } }
   .section__infoLight {
     position: absolute;
     bottom: 30%;

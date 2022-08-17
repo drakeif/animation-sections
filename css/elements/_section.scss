@@ -186,12 +186,24 @@
         animation: moveLight 5s infinite ease-in-out .5s;
         @keyframes moveLight {
             from {
-                left: -2%;
-                bottom: -3%;
+                transform: translate3d(0, 0, 0);
+                
             }
             to {
-                left: 78%;
-                bottom: 72%;
+                transform: translate3d(220px, -130px, 0);
+                
+            }
+        }
+        @include media(500) {
+            @keyframes moveLight {
+                from {
+                    transform: translate3d(0, 0, 0);
+                    
+                }
+                to {
+                    transform: translate3d(140px, -80px, 0);
+                    
+                }
             }
         }
     }
@@ -199,15 +211,27 @@
         position: absolute;
         left: -2%;
         bottom: -5%;
-        animation: moveDark 3s infinite ease-in .5s;
+        animation: moveDark 3s infinite ease-in-out .5s;
         @keyframes moveDark {
             from {
-                left: -2%;
-                bottom: -5%;
+                transform: translate3d(0, 0, 0);
+                
             }
             to {
-                left: 81%;
-                bottom: 75%;
+                transform: translate3d(220px, -130px, 0);
+                
+            }
+        }
+        @include media(500) {
+            @keyframes moveDark {
+                from {
+                    transform: translate3d(0, 0, 0);
+                    
+                }
+                to {
+                    transform: translate3d(140px, -80px, 0);
+                    
+                }
             }
         }
     }
